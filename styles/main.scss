@@ -1,0 +1,101 @@
+@import 'variables'; // Variables globales
+@import 'mixins';    // Mixins reutilizables
+@import 'base';      // Estilos globales y reset
+@import 'header';    // Estilos del header
+@import 'footer';    // Estilos del footer
+@import 'sections';  // Secciones específicas
+
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+// Variables
+$primary-color: #8B4513;
+$secondary-color: #FFF;
+
+ 
+
+// Estilos generales
+body {
+  margin: 0;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+// Ejemplo de anidación
+.nav {
+  background-color: $primary-color;
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+//................................Inicio media Query para tablet............................
+
+@media (min-width: $breakpoint-tablet) {
+    .header {
+      .nav-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+  
+      .menu-toggle {
+        display: none;
+      }
+    }
+  
+    .hero {
+      flex-direction: row;
+      text-align: left;
+  
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  //.............................Inicio media query desktop..................................
+
+  @media (min-width: $breakpoint-desktop) {
+    .header {
+      padding: 2rem;
+  
+      .logo {
+        font-size: 2rem;
+      }
+    }
+  
+    .hero {
+      padding: 4rem 2rem;
+  
+      h1 {
+        font-size: 3rem;
+      }
+  
+      .btn-primary {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  

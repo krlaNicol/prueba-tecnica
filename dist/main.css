@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pacifico", sans-serif;
+  font-size: 16px;
+  background-color: #f9f4ef;
+  color: #8b4513;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header .logo {
+  font-size: 1.5rem;
+  color: #8b4513;
+}
+.header .menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #8b4513;
+  cursor: pointer;
+}
+.header .nav-menu {
+  display: none;
+  flex-direction: column;
+}
+.header .nav-menu.active {
+  display: flex;
+  background-color: #8b4513;
+}
+.header .nav-menu.active a {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  color: #8b4513;
+}
+.hero p {
+  margin: 1rem 0;
+  color: rgb(94.1329113924, 46.7278481013, 12.8670886076);
+}
+.hero .btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #8b4513;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero .btn-primary:hover {
+  background-color: rgb(183.8670886076, 91.2721518987, 25.1329113924);
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #FFF;
+  color: #8B4513;
+}
+
+.nav {
+  background-color: #8B4513;
+}
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .header .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .header .menu-toggle {
+    display: none;
+  }
+  .hero {
+    flex-direction: row;
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 2rem;
+  }
+  .header .logo {
+    font-size: 2rem;
+  }
+  .hero {
+    padding: 4rem 2rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero .btn-primary {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
