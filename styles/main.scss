@@ -14,8 +14,6 @@
 // Estilos generales
 body {
   margin: 0;
-  background-color: $secondary-color;
-  color: $primary-color;
 }
 
 .nav {
@@ -53,6 +51,348 @@ body {
     }
   }
 }
+
+.logo{
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  border-bottom: 2px dashed #847571;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.navLogo{
+  display: flex;         
+  align-items: center;  
+  text-decoration: none;
+  font-family: $font-family-primary;
+  color: $secondary-color;
+}
+.logo img{
+  width: 28px;
+  height: 28px;
+  margin-right: 8px; 
+}
+
+.home{
+  .home-content{ 
+    padding-top: 48px;
+  
+    .h2{
+      font-family: $font-family-secondary, 'Poppins', sans-serif;
+      color: $tertiary-color;
+      text-align: center;
+      font-weight: 200;
+      font-size: 15px;
+    }
+  }
+}
+
+.textImg{
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  img{
+    width: 277px;
+    height: auto;
+  }
+}
+
+.contentP{
+  margin-left: 24px;
+  margin-right: 24px;
+  .p{
+    font-family: $font-family-secondary, 'Poppins', sans-serif;
+      color: $secondary-color;
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+  }
+}
+.btnContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  .btn-primary{
+    background-color: $tertiary-color;
+    text-align: center;
+    border-radius: 64px;
+    width: 176px;
+    height: 56px;
+    font-size: 15px;
+    font-family: $font-family-secondary;
+    font-weight: 500;
+
+}
+}
+.imgCafe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  img{
+    width: 320px;
+  }
+}
+
+//...................................Inicio shop section.....................................
+
+.btnContent2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  .btnScroll{
+    background-color: #2B1712;
+    text-align: center;
+    border-radius: 64px;
+    width: 176px;
+    height: 56px;
+    font-size: 15px;
+    font-family: $font-family-secondary;
+    font-weight: 500;
+    color: $secondary-color;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ }
+
+.contentP2{
+  margin-left: 24px;
+  margin-right: 24px;
+  .p2{
+    font-family: $font-family-secondary, 'Poppins', sans-serif;
+      color: $secondary-color;
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      width: 328px;
+      padding-top: 32px;
+  }
+}
+
+.productContent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap:56px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+      width: 120px;
+      height: auto;
+    }
+.fontProduct{
+  color: $secondary-color;
+  font-family: $font-family-primary;
+  font-size: 20px;
+  font-weight: 400;
+}
+  }
+
+
+
+//...................................About shop section.....................................
+.about{
+  background-color: $secondary-color;
+
+  .aboutContent{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding-bottom: 56px;
+      
+    h2{
+      padding-top: 40px;
+      text-align: center;
+      font-family: $font-family-primary;
+
+    }
+    p{
+      text-align: center;
+      font-family: $font-family-secondary;
+      width: 328px;
+      padding-top: 24px;
+      padding-bottom: 48px;
+    }
+    img{
+      width: 328px;
+      border-radius: 16px;
+    }
+  }
+}
+
+//....................................Section Inicio steps...........................
+.titleStep{
+  
+  display: flex;
+  justify-content: center;
+  h1{
+    color: $secondary-color;
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top:40px ;
+  }
+}
+.contentGeneralStep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  
+
+  .stepLineB{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+}
+
+.stepContent{
+     position: relative;
+     z-index:auto;
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    color: #fff; // Texto blanco
+    font-family: $font-family-secondary;
+    width: 250px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    .circle {
+      position: relative;
+      width: 150px; // Tamaño del círculo
+      height: 150px;
+      background-color:#65463E ;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      img {
+        width: 120px; // Tamaño de la imagen dentro del círculo
+        height: auto;
+      }
+
+      .subCircle {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 50px; // Tamaño del subcírculo
+        height: 50px;
+        background-color: #f5d28b; // Color amarillo claro
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 10px solid #4B2C24; // Borde marrón oscuro
+
+        h2 {
+          margin: 0;
+          font-size: 1rem;
+          color: #4d2c20; // Texto marrón oscuro
+          font-weight: bold;
+        }
+      }
+    }
+
+    p {
+      font-family: $font-family-secondary;
+      text-align: left;
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #fff; // Texto blanco
+    }
+  }
+}
+
+.stepContent2 {
+   position: relative;
+   z-index: auto;
+  .steps2 {
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    color: #fff; // Texto blanco
+    font-family: $font-family-secondary;
+    width: 250px;
+    padding-bottom: 48px;
+    padding-right: 24px;
+    margin-left: 99px;
+    .circle2 {
+      position: relative;
+      width: 150px; // Tamaño del círculo
+      height: 150px;
+      background-color:#65463E ;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      img {
+        width: 120px; // Tamaño de la imagen dentro del círculo
+        height: auto;
+      }
+
+      .subCircle2 {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 50px; // Tamaño del subcírculo
+        height: 50px;
+        background-color: #f5d28b; // Color amarillo claro
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 10px solid #4B2C24; // Borde marrón oscuro
+
+        h2 {
+          margin: 0;
+          font-size: 1rem;
+          color: #4d2c20; // Texto marrón oscuro
+          font-weight: bold;
+        }
+      }
+    }
+
+    p {
+      font-family: $font-family-secondary;
+      text-align: right;
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #fff; // Texto blanco
+    }
+  }
+}
+
+
+
 
 //................................Inicio media Query para tablet............................
 
