@@ -3,11 +3,17 @@
 // Colores
 $primary-color: #8b4513;
 $secondary-color: #ffffff;
-$background-color: #f9f4ef;
+$tertiary-color: #DDB66F;
+
 
 // Tipografía
-$font-family: 'Pacifico', sans-serif;
-$font-size-base: 16px;
+// variables.scss
+$font-family-primary: 'Pacifico', cursive;
+$font-family-secondary: 'Poppins', sans-serif;
+$primary-color: #8b4513;
+$secondary-color: #ffffff;
+$tertiary-color: #DDB66F;
+
 
 // Breakpoints
 $breakpoint-tablet: 768px;

@@ -1,17 +1,19 @@
-// _base.scss
-
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+
+
   body {
-    font-family: $font-family;
-    font-size: $font-size-base;
-    background-color: $background-color;
+    margin: 0;
+    background: linear-gradient(180deg, #2B1712 , #4B2C24);
     color: $primary-color;
+    font-family: $font-family-secondary; // Uso de la variable de fuente secundaria
   }
+  
   
   img {
     max-width: 100%;
