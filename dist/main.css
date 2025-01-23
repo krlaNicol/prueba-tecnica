@@ -644,8 +644,6 @@ ul {
   gap: 104px;
 }
 .stepContent2 .steps2 {
-  position: relative;
-  bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -950,6 +948,8 @@ ul {
     z-index: 2;
   }
   .stepContent2 .steps2 {
+    position: relative;
+    bottom: 100px;
     display: flex;
     flex-direction: column-reverse; /* Invertir la columna */
     align-items: end;
