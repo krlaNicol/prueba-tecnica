@@ -438,6 +438,146 @@ body {
   color: #fff;
 }
 
+.sectionTestimonial {
+  background-color: #ffffff;
+}
+.sectionTestimonial .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 56px;
+}
+.sectionTestimonial .testimonial h1 {
+  color: black;
+  font-family: "Pacifico", cursive;
+  font-size: 28px;
+  width: 328px;
+  text-align: center;
+  font-weight: 400;
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+.sectionTestimonial .testimonial h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 48px;
+}
+.sectionTestimonial .testimonial img {
+  width: 328px;
+  border-radius: 16px;
+}
+
+.logo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 16px;
+}
+
+.navLogo2 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+}
+
+.logo2 img {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.textFooter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 72px;
+}
+.textFooter h1 {
+  font-family: "Pacifico", cursive;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.registerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.registerContent .resgister {
+  padding-bottom: 16px;
+}
+.registerContent .resgister .input {
+  background-color: transparent;
+  width: 328px;
+  height: 64px;
+  padding-left: 24px;
+  border-radius: 64px;
+  border: solid 2px #847571;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #847571;
+}
+
+.bnSubscribe {
+  padding-bottom: 16px;
+}
+.bnSubscribe button {
+  background-color: #DDB66F;
+  width: 328px;
+  height: 64px;
+  border: none;
+  border-radius: 64px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.registerText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerText h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  width: 328;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 72px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  padding-bottom: 32px;
+}
+.redes img {
+  width: 20px;
+  height: 20px;
+}
+
+.copyR {
+  color: #847571;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  padding-bottom: 32px;
+  font-family: "Poppins", sans-serif;
+}
+
 @media (min-width: 768px) {
   .header .nav-menu {
     display: flex;
