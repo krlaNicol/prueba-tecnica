@@ -1,0 +1,23 @@
+{
+  "name": "prueba-tecnica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass styles/main.scss dist/main.css"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krlaNicol/prueba-tecnica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krlaNicol/prueba-tecnica/issues"
+  },
+  "homepage": "https://github.com/krlaNicol/prueba-tecnica#readme"
+}
