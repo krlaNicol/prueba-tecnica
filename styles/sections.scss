@@ -1,34 +1,723 @@
-// _sections.scss
+// SECTION HOME...........................................................
 
-.hero {
+.home{
+  background: linear-gradient(180deg, #2B1712 , #4B2C24);
+  .home-content{ 
+    padding-top: 48px;
+  
+    .h2{
+      font-family: $font-family-secondary, 'Poppins', sans-serif;
+      color: $tertiary-color;
+      text-align: center;
+      font-weight: 200;
+      font-size: 15px;
+    }
+  }
+}
+.textImgContent{ 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+.textImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 277px;
+  .text{
+    text-align:left;
+    font-family: $font-family-primary;
+    color: $secondary-color;
+    font-size: 44px;
+    width: 273px;
+    font-weight: 400;
+  }
+  img{
+    position: absolute; 
+      bottom: 2px; 
+      right: -5px; 
+      width: 80px;
+      height: auto;
+  }
+}
+}  
+
+
+.contentP{
+  margin-left: 24px;
+  margin-right: 24px;
+  .p{
+    font-family: $font-family-secondary, 'Poppins', sans-serif;
+      color: $secondary-color;
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+  }
+}
+.btnContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  .btn-primary{
+    background-color: $tertiary-color;
+    text-align: center;
+    border-radius: 64px;
+    width: 176px;
+    height: 56px;
+    font-size: 15px;
+    font-family: $font-family-secondary;
+    font-weight: 500;
+
+}
+}
+.imgCafe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  img{
+    width: 320px;
+  }
+}
+
+//SECTION ABOUT...............................................
+
+
+.btnContent2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  .btnScroll{
+    background-color: #2B1712;
+    text-align: center;
+    border-radius: 64px;
+    width: 176px;
+    height: 56px;
+    font-size: 15px;
+    font-family: $font-family-secondary;
+    font-weight: 500;
+    color: $secondary-color;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ }
+
+.contentP2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  .p2{
+    font-family: $font-family-secondary, 'Poppins', sans-serif;
+      color: $secondary-color;
+      text-align: center;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      width: 328px;
+      padding-top: 32px;
+  }
+}
+
+.productContent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap:56px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+      width: 120px;
+      height: auto;
+    }
+.fontProduct{
+  color: $secondary-color;
+  font-family: $font-family-primary;
+  font-size: 20px;
+  font-weight: 400;
+}
+  }
+
+
+
+//...................................About section.....................................
+.about{
+  background-color: $secondary-color;
+  border-radius: 64PX 64PX 0 0;
+  .aboutContent{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding-bottom: 56px;
+      
+    h2{
+      padding-top: 40px;
+      text-align: center;
+      font-family: $font-family-primary;
+
+    }
+    p{
+      text-align: center;
+      font-family: $font-family-secondary;
+      width: 328px;
+      padding-top: 24px;
+      padding-bottom: 48px;
+    }
+    img{
+      width: 328px;
+      border-radius: 16px;
+    }
+  }
+}
+  
+//SECTION STEPS...................................................................
+  
+.titleStep{
+  
+  display: flex;
+  justify-content: center;
+  h1{
+    color: $secondary-color;
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top:40px ;
+  }
+}
+.contentGeneralStep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  
+
+  .stepLineB{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+}
+
+.stepContent{
+     position: relative;
+     z-index:2;
+     gap: 104px;
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    color: #fff; // Texto blanco
+    font-family: $font-family-secondary;
+    width: 250px;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    .circle {
+      position: relative;
+      width: 150px; // Tamaño del círculo
+      height: 150px;
+      background-color:#65463E ;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      img {
+        width: 120px; // Tamaño de la imagen dentro del círculo
+        height: auto;
+      }
+
+      .subCircle {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 50px; // Tamaño del subcírculo
+        height: 50px;
+        background-color: #f5d28b; // Color amarillo claro
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 10px solid #4B2C24; // Borde marrón oscuro
+
+        h2 {
+          margin: 0;
+          font-size: 1rem;
+          color: #4d2c20; // Texto marrón oscuro
+          font-weight: bold;
+        }
+      }
+    }
+
+    p {
+      font-family: $font-family-secondary;
+      text-align: left;
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #fff; // Texto blanco
+    }
+  }
+}
+
+.stepContent2 {
+   position: relative;
+   z-index: 2;
+   gap: 104px;
+  .steps2 {
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    color: #fff; // Texto blanco
+    font-family: $font-family-secondary;
+    width: 250px;
+    padding-bottom: 48px;
+    padding-right: 0px;
+    margin-left: 0px;
+ 
+    .circle2 {
+      position: relative;
+      width: 150px; // Tamaño del círculo
+      height: 150px;
+      background-color:#65463E ;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      img {
+        width: 120px; // Tamaño de la imagen dentro del círculo
+        height: auto;
+      }
+
+      .subCircle2 {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 50px; // Tamaño del subcírculo
+        height: 50px;
+        background-color: #f5d28b; // Color amarillo claro
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 10px solid #4B2C24; // Borde marrón oscuro
+
+        h2 {
+          margin: 0;
+          font-size: 1rem;
+          color: #4d2c20; // Texto marrón oscuro
+          font-weight: bold;
+        }
+      }
+    }
+
+    p {
+      font-family: $font-family-secondary;
+      text-align: right;
+      margin-top: 24px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #fff; // Texto blanco
+    }
+  }
+}
+
+//SECTION TESTIMONIAL ..............................................................
+
+.sectionTestimonial{
+  background-color: $secondary-color;
+  border-radius: 64PX 64PX 0 0;
+  .testimonial{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem 1rem;
-   
+    padding-bottom: 56px;
   
-    h1 {
-      font-size: 2rem;
-      color: $primary-color;
+    h1{  
+      color: black;
+      font-family: $font-family-primary;
+      font-size: 28px;
+      width: 328px;
+      text-align: center;
+      font-weight: 400;
+      padding-top: 40px;
+      padding-bottom: 24px;
     }
-  
-    p {
-      margin: 1rem 0;
-      color: darken($primary-color, 10%);
+    h2{
+      font-family: $font-family-secondary;
+      font-size: 15px;
+      font-weight: 500;
+      padding-bottom: 48px;
     }
-  
-    .btn-primary {
-      padding: 0.75rem 1.5rem;
-      background-color: $primary-color;
-      color: $secondary-color;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: lighten($primary-color, 10%);
-      }
+    img{
+      width: 328px;
+      border-radius: 16px;
     }
   }
+  }
+
+  //INICIO MEDIA QUERY TABLET.......................................................
+
+  @media (min-width: $breakpoint-tablet) {
+
+  }
   
+  //INICIO MEDIA QUERY DESKTOP..................................
+  
+  @media (min-width: $breakpoint-desktop) {
+    
+    // SECTION HOME...........................................................
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 200px;
+  .home-content{ 
+    padding-top: 48px;
+  
+    .h2{
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+}
+.textImgContent{ 
+  display: flex;
+    justify-content: left;
+    align-items: center;
+.textImg{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 447px;
+  .text{
+    text-align:left;
+    font-size: 72px;
+    width: 447px;
+  
+  }
+  img{
+      bottom: 2px; 
+      right: -5px; 
+      width: 120px;
+  }
+}
+}  
+.contentP{
+  margin-left: 0px;
+  margin-right: 24px;
+  width: 447px;
+  .p{
+      font-weight: 400;
+      font-size: 16px;
+      text-align:left;
+  }
+}
+.btnContent{
+  justify-content:left;
+  padding-top: 48px;
+  width: 447px;
+  margin-left: 23px;
+  .btn-primary{
+    width: 182px;
+    font-size: 16px;  
+}
+}
+.imgCafe{
+  padding-top: 64px;
+  padding-bottom: 68px;
+  img{
+    width: 550px;
+  }
+}
+
+//SECTION ABOUT...............................................
+
+.shop{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+.shopLeftContent{
+  display: flex;
+  justify-content: left;
+    flex-direction: column;
+    gap: 32px; 
+    padding-left: 162px;
+}
+.btnContent2{
+  display: flex;
+  justify-content: left; 
+  align-items: center; 
+  padding-top: 94px;
+  padding-left: 25px;
+  .btnScroll{
+     width: 182px;
+    font-size: 16px;
+}
+ }
+
+.contentP2{
+  display: flex;
+  justify-content: left; 
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+ 
+  .p2{
+      text-align: left;
+      font-size: 16px;
+      width: 418px;
+      padding-top: 32px;
+  }
+}
+
+.productContent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap:88px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-right: 158px;
+  width: 536px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+      width: 120px;
+      height: auto;
+    }
+.fontProduct{
+  padding-top: 5px;
+  font-size: 20px;
+  width: 117px;
+ 
+
+}
+  }
+
+//...................................About section.....................................
+.about{
+
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  .aboutContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap:107px;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    width: 536px;
+      
+    h2{
+      padding-top: 40px;
+      text-align: left;
+      font-size: 48px;
+    }
+    p{
+      text-align: left;
+      width: 328px;
+      padding-top: 24px;
+      padding-bottom: 48px;
+      font-size: 16px;
+    }
+    img{
+      width: 550px;
+      border-radius: 32px;
+    }
+  }
+}
+
+//SECTION STEPS...................................................................
+  
+.titleStep{
+
+  h1{
+    font-size: 48px;
+    padding-bottom: 68px;
+    padding-top:64px ;
+  }
+}
+.contentGeneralStep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+
+
+  .stepLineB{
+   
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    transform: rotate(90deg)
+    
+  }
+}
+
+.stepContent{
+  display: flex;
+  flex-direction: row; /* Cambia a fila horizontal */
+  align-items: baseline;
+     position: relative;
+     z-index:2;
+
+  .steps {
+  width: 272px;
+  height: auto;
+  padding-bottom: 4px;
+  padding-left: 2px;
+    .circle {
+      width: 260px; // Tamaño del círculo
+      height: 260px;
+  
+      img {
+        width: 210px; // Tamaño de la imagen dentro del círculo
+        height: auto;
+      }
+
+      .subCircle {
+        width: 85px; // Tamaño del subcírculo
+        height: 85px;
+        
+        h2 {
+          
+          font-size: 36px;
+          color: #4d2c20; // Texto marrón oscuro
+          font-weight: 600;
+        }
+      }
+    }
+
+    p {
+      
+      text-align: left;
+      margin-top: 24px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #fff; // Texto blanco
+    }
+  }
+}
+
+.stepContent2 {
+    display: flex;
+    flex-direction: row; /* Cambia a fila horizontal */
+    align-items: baseline;
+    position: relative;
+    z-index:2;
+  .steps2 {
+    display: flex;
+    flex-direction: column-reverse; /* Invertir la columna */
+    align-items: end;
+    width: 272px;
+    height: auto;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    .circle2 {
+      margin-top: 32px;
+      width: 260px; // Tamaño del círculo
+      height: 260px;
+
+      img {
+        width: 210px; // Tamaño de la imagen dentro del círculo
+        height: auto;
+      }
+
+      .subCircle2 {
+        width: 85px; // Tamaño del subcírculo
+        height: 85px;
+
+        h2 {
+          font-size: 36px;
+          color: #4d2c20; // Texto marrón oscuro
+          font-weight: 600;
+        }
+      }
+    }
+
+    p {
+      text-align: left;
+      margin-top: 32px;
+      font-size: 16px;
+
+
+    }
+  }
+}
+//SECTION TESTIMONIAL ..............................................................
+
+.sectionTestimonial{
+ 
+  .testimonial{
+    display: flex;
+  justify-content: center; /* Centra los div horizontalmente */
+  align-items: center;     /* Alinea los div verticalmente */
+  padding-bottom: 68px;
+  padding-top: 64px;
+
+  flex-direction: row; 
+  gap: 32px;
+  
+    h1{  
+      line-height: 57px;
+      font-size: 48px;
+      width: 538px;
+      text-align: left;
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+    h2{
+
+      font-size: 16px;
+      padding-bottom: 48px;
+      text-align: left;
+    }
+    img{
+      width: 536px;
+      border-radius: 16px;
+    }
+  }
+  }
+
+
+
+  }
+  
+   

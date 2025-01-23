@@ -1,6 +1,97 @@
 // _header.scss
+.nav {
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  background: linear-gradient(180deg, #4B2C24, #2B1712); 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); // Sombra superior para dar profundidad
+  z-index: 100; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 56px 56px 0 0;
+  .nav-menu {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      font-size: 10px; 
+      font-family: 'Pacifico', cursive; 
+
+      a {
+        text-decoration: none; 
+        color: $secondary-color; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        transition: color 0.3s ease; 
+
+        img {
+          width: 24px; // Tamaño del icono
+          height: 24px;
+          margin-bottom: 4px; // Espaciado entre icono y texto
+        }
+
+        &:hover {
+          color: $tertiary-color; // Cambia el color al pasar el cursor
+        }
+      }
+    }
+  }
+}
+
+//scroll
+.scrollContent{
+  position: fixed; 
+  bottom: 100px;
+  right: 20px;
+  z-index: 99;
+  .scrollToTop {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4B2C24;
+    color: $secondary-color;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    border: solid 1px $secondary-color;
+    
+}
+}
+
+.logo{
+  background: #2B1712;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  border-bottom: 2px dashed #847571;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.navLogo{
+  display: flex;         
+  align-items: center;  
+  text-decoration: none;
+  font-family: $font-family-primary;
+  color: $secondary-color;
+}
+.logo img{
+  width: 28px;
+  height: 28px;
+  margin-right: 8px; 
+}
+
 
 .header {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,3 +126,62 @@
     }
   }
   
+  //INICIO MEDIA QUERY TABLET.......................................................
+
+  @media (min-width: $breakpoint-tablet) {
+
+  }
+   //INICIO MEDIA QUERY DESKTOP..................................
+  
+   
+@media (min-width: $breakpoint-desktop) {
+ header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-bottom: 2px dashed #847571;
+
+  .scrollContent {
+    display: none; // Ocultar el botón de scroll en desktop
+  }
+ }
+ .logo{
+  border: none;
+ }
+ .navLogo{
+  
+  font-size: 20px;
+}
+  .nav {
+    position: static; 
+    width: 416px;
+    background: none;
+    box-shadow: none; 
+    padding: 0; 
+    border-radius: 0; 
+    padding-right: 160px;
+   
+
+    
+    .nav-menu {
+      gap: 72px;
+      
+      li {
+        font-size: 16px; 
+        a {
+          
+           img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .nav .nav-menu li a :hover {
+    color: #f39c12; /* Color del texto cuando se pasa el cursor por encima */
+  }
+
+
+}
+

@@ -1,0 +1,11 @@
+// mixins.scss
+@mixin responsive($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin box-shadow($color, $blur) {
+    box-shadow: 0 4px $blur $color;
+  }
+  
