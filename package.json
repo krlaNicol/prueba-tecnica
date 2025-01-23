@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass styles/main.scss dist/main.css"
+    "build": "sass styles/main.scss:dist/main.css"
   },
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "sass": "^1.56.0"
   },
   "repository": {
     "type": "git",
